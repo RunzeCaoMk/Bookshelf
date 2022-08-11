@@ -1,0 +1,8 @@
+[submodule "vaadin-final"]
+	path = vaadin-final
+	url = git@bitbucket.org:mark_cao/vaadin-final.git
+	branch = master
+[submodule "quarkusrest"]
+	path = quarkusrest
+	url = git@bitbucket.org:mark_cao/quarkusrest.git
+	branch = master

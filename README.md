@@ -1,26 +1,14 @@
 # stackFinal Integration instruction
 
-This project contains following compoents:
-Persistence:
-A paging MongoDB database running in a docker container and deployed to AWS via Lightsail.
+This project contains the following components: Persistence: A paging MongoDB database running in a docker container and deployed to AWS via Lightsail.
 
-Microservice:
-Quarkus microservice with complete CRUD operations compiled to jvm-jar and running in a docker container 
-deployed to AWS via Lightsail on same Lightsail instances as MongoDB. 
+Microservice: Quarkus microservice with complete CRUD operations compiled to jvm-jar and running in a docker container deployed to AWS via Lightsail on the same Lightsail instances as MongoDB.
 
-AWS Lambda:
-Integrate your awsContact lambda with your Vaadin-Spring or Android application, and deployed to AWS via 
-SAM and configured to use API-Gateway and SES. 
+AWS Lambda: Integrate your awsContact lambda with your Vaadin-Spring or Android application, deployed to AWS via SAM, and configured to use API-Gateway and SES.
 
-Cognito User Pools:
-This app integrates user management using Cognito User Pools and able to scale to infinite number of users.
-In practice, this will mean saving the user's email as a field in each of the mongo records, and then 
-when querying the db, filtering only those records that match that user's email.
+Cognito User Pools: This app integrates user management using Cognito User Pools and is able to scale to an infinite number of users. In practice, this will mean saving the user's email as a field in each of the mongo records, and then when querying the DB, filtering only those records that match that user's email.
 
-Vaadin Web Client:
-This is a favorites web application with full CRUD (create, read, update, delete) operations on Google Book
-model. It integrates a 3rd party RESTful and searchable API -- Google Book API. Once the user finds a favorite item, 
-he may add/delete/update that item in a list of items displayed in the app. 
+Vaadin Web Client: This is a favorite web application with full CRUD (create, read, update, delete) operations on the Google Book model. It integrates a 3rd party RESTful and searchable API -- Google Book API. Once the user finds a favorite item, he may add/delete/update that item in a list of items displayed in the app.
 
 ## vaadin-app
 
